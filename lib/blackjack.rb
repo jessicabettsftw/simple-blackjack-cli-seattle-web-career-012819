@@ -52,9 +52,10 @@ end
 def runner
   welcome
   hand = initial_round
-  until hand > 21
-    hand += hit?(hand)
-    display_card_total(hand)
+  while hand > 21
+    updated_hand = hit?(hand)
+    display_card_total(updated_hand)
+    hand = updated_hand
   end
   end_game(updated_hand)
 end
