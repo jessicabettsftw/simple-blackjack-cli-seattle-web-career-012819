@@ -53,5 +53,7 @@ def runner
   welcome
   inital_hand = initial_round
   updated_hand = hit?(inital_hand)
+  display_card_total
+  end_game
 end
     
