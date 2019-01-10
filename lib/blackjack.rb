@@ -18,8 +18,8 @@ def get_user_input
   choice = gets.chomp
 end
 
-def end_game
-  # code #end_game here
+def end_game(total)
+  puts "I'm sorry"
 end
 
 def initial_round
