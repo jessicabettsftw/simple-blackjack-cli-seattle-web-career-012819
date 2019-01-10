@@ -37,7 +37,7 @@ def hit?(total)
     new_card = deal_card
     return new_card
   else 
-    return total
+    return 0
   end
 end
 
